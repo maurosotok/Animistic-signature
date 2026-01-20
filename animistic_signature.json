@@ -1,0 +1,72 @@
+{
+  "first_name": "Name",
+  "last_name": "Surname",
+  "title": "Title / Position",
+  "title_link_url": "https://animistic.co",
+  "phone_display": "+1 (000) 000 0000",
+  "phone_tel": "+10000000000",
+  "email": "name.surname@animistic.co",
+  "website_url": "https://animistic.co",
+
+  "assets": {
+    "logo_mark_url": "https://animistic.co/path/to/animistic_mark.png",
+    "heart_icon_url": "https://animistic.co/path/to/heart_icon.png",
+
+    "icon_phone_url": "https://animistic.co/path/to/icon_phone.png",
+    "icon_email_url": "https://animistic.co/path/to/icon_email.png",
+
+    "social_linkedin_icon_url": "https://animistic.co/path/to/social_linkedin.png",
+    "social_facebook_icon_url": "https://animistic.co/path/to/social_facebook.png",
+    "social_youtube_icon_url": "https://animistic.co/path/to/social_youtube.png",
+    "social_instagram_icon_url": "https://animistic.co/path/to/social_instagram.png",
+    "social_podcast_icon_url": "https://animistic.co/path/to/social_podcast.png"
+  },
+
+  "social_links": {
+    "linkedin_url": "https://www.linkedin.com/company/animistic",
+    "facebook_url": "https://www.facebook.com/animistic",
+    "youtube_url": "https://www.youtube.com/@animistic",
+    "instagram_url": "https://www.instagram.com/animistic",
+    "podcast_url": "https://animistic.co/podcast"
+  },
+
+  "colors": {
+    "deep_see_blue": "#003eae",
+    "bright_pink": "#ff5ca8",
+    "deep_blue": "#1b56cc",
+    "blue": "#246cde",
+    "sky_blue": "#3f8cff",
+    "hot_pink": "#ff3d7f",
+    "light_orange": "#ffb060",
+    "purple": "#a23be7",
+    "off_white": "#f1f2f2"
+  },
+
+  "placeholders": {
+    "FIRST_NAME": "%%FIRST_NAME%%",
+    "LAST_NAME": "%%LAST_NAME%%",
+    "TITLE": "%%TITLE%%",
+    "TITLE_LINK_URL": "%%TITLE_LINK_URL%%",
+    "PHONE_DISPLAY": "%%PHONE_DISPLAY%%",
+    "PHONE_TEL": "%%PHONE_TEL%%",
+    "EMAIL": "%%EMAIL%%",
+    "WEBSITE_URL": "%%WEBSITE_URL%%",
+
+    "LOGO_MARK_URL": "%%LOGO_MARK_URL%%",
+    "HEART_ICON_URL": "%%HEART_ICON_URL%%",
+    "ICON_PHONE_URL": "%%ICON_PHONE_URL%%",
+    "ICON_EMAIL_URL": "%%ICON_EMAIL_URL%%",
+
+    "SOCIAL_LINKEDIN_URL": "%%SOCIAL_LINKEDIN_URL%%",
+    "SOCIAL_FACEBOOK_URL": "%%SOCIAL_FACEBOOK_URL%%",
+    "SOCIAL_YOUTUBE_URL": "%%SOCIAL_YOUTUBE_URL%%",
+    "SOCIAL_INSTAGRAM_URL": "%%SOCIAL_INSTAGRAM_URL%%",
+    "SOCIAL_PODCAST_URL": "%%SOCIAL_PODCAST_URL%%",
+
+    "SOCIAL_LINKEDIN_ICON_URL": "%%SOCIAL_LINKEDIN_ICON_URL%%",
+    "SOCIAL_FACEBOOK_ICON_URL": "%%SOCIAL_FACEBOOK_ICON_URL%%",
+    "SOCIAL_YOUTUBE_ICON_URL": "%%SOCIAL_YOUTUBE_ICON_URL%%",
+    "SOCIAL_INSTAGRAM_ICON_URL": "%%SOCIAL_INSTAGRAM_ICON_URL%%",
+    "SOCIAL_PODCAST_ICON_URL": "%%SOCIAL_PODCAST_ICON_URL%%"
+  }
+}

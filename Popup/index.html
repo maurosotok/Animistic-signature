@@ -1,0 +1,397 @@
+<style></style>
+<style>
+    .quick_form_5_css,
+.quick_form_5_css * {
+  box-sizing: border-box !important;
+}
+
+  .quick_form_5_css * {
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    overflow-wrap: break-word;
+  }
+.pum-theme-11185 .pum-container, .pum-theme-mauros-theme .pum-container{
+padding: 0px !important;
+}
+
+
+
+  @media only screen and (max-width: 600px) {
+   .quick_form_5_css[name="SIGNUP_BODY"] {
+    width: 100% !important;
+    max-width: 420px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+  .elementor-element-58c8bc8{
+    width: 100% !important;
+  }
+    .SIGNUP_FLD {
+      width: 90% !important;
+      margin: 10px 5% !important;
+      padding: 0 !important;
+    }
+    .SIGNUP_FLD input {
+      margin: 0 !important;
+    }
+  }
+  .ZohoSection {
+    display: none !important;
+  }
+  #sf3zc3d930573b6e327368ab0bc54f79128beea37ce11ca2301b4276df5ab6d88371 {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+  #localSuccess {
+    display: none;
+    background: #e6ffed;
+    border: 1px solid #8fd19e;
+    color: #1b5e20;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin: 0 0 16px;
+    text-align: center;
+    font-weight: 600;
+  }
+  #localSuccess.show {
+    display: block;
+  }
+  #sf3zc3d930573b6e327368ab0bc54f79128beea37ce11ca2301b4276df5ab6d88371
+    .quick_form_5_css {
+    background: #ffffff !important;
+    width: 90% !important;
+    max-width: 900px !important; /*margin: 10vh 5% 4vh !important;*/
+    height: auto !important;
+    border: 1px solid #cecece !important;
+    overflow: hidden !important;
+    border-radius: 10px;
+    padding: 28px !important;
+
+  } /* Heading */
+  #SIGNUP_HEADING {
+    padding: 0 0 18px !important;
+    border: none !important;
+    width: 100% !important;
+  } /* === Two-column layout === */
+  .signup-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    align-items: center;
+  }
+  .signup-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+  }
+  .signup-hero img {
+    width: 100%;
+    max-width: 360px !important;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+  .button-wrap {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 0px !important;
+  }
+  .signup-panel {
+    width: 100%;
+  }
+  .signup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center !important;
+  } /* Override Zoho inline widths/heights for a clean vertical stack */
+  .SIGNUP_FLD {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+  .SIGNUP_FLD input[type="text"],
+  .SIGNUP_FLD input[type="email"] {
+    width: 100% !important;
+    height: 52px !important;
+    font-size: 18px !important;
+    padding: 10px 14px !important;
+    border: 1px solid #d6cdcd !important;
+    border-radius: 8px !important;
+    color: #2b2b2b !important;
+    outline: none !important;
+  }
+  #zcWebOptin {
+    height: 52px !important;
+    border: 0 !important;
+    border-radius: 999px !important;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    color: #ffffff !important;
+  }
+  #zcWebOptin:hover {
+    filter: brightness(0.95);
+  }
+  #errorMsgDiv {
+    font-size: 16px !important;
+    display: none;
+  }
+  #localSuccess::before {
+    content: "🎉";
+    display: inline-block;
+    margin-right: 8px;
+    line-height: 1;
+  }
+  /* Limpia los BR que WordPress mete dentro del botón */
+  #zcWebOptin br,
+  #zcWebOptin p {
+    display: none !important;
+  }
+
+  /* Centrado perfecto del texto dentro del botón */
+  #zcWebOptin {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1 !important; /* anula line-height heredados raros */
+    white-space: nowrap !important; /* evita cortes en 2 líneas */
+    vertical-align: middle !important;
+  }
+
+  /* Por si el tema agrega pseudo-elementos en botones */
+  #zcWebOptin::before,
+  #zcWebOptin::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  #Zc_SignupSuccess {
+    position: relative !important;
+    margin: 10px 0 !important;
+    display: none;
+  } /* Responsive */
+  @media (max-width: 820px) {
+    .signup-grid {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+    .signup-hero img {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    #SIGNUP_HEADING {
+      text-align: center !important;
+    }
+  }
+</style>
+<!-- ====== Markup (mismos IDs para tus logs/snippet) ====== -->
+<div
+  id="sf3zc3d930573b6e327368ab0bc54f79128beea37ce11ca2301b4276df5ab6d88371"
+  data-type="signupform"
+>
+  <div id="customForm">
+    <!-- name="SIGNUP_BODY" se mantiene para reglas móviles de Zoho -->
+    <div class="quick_form_5_css" name="SIGNUP_BODY">
+     <button type="button" class="pum-close popmake-close" aria-label="Close" style> x </button>
+
+
+      <div
+        id="SIGNUP_HEADING"
+        style="
+          font-weight: 600 !important;
+          text-align: center !important;
+          font-size: 28px !important;
+          color: #20397d !important;
+          background-color: #ffffff;
+        "
+      >
+        Have you signed up for our newsletter?
+      </div>
+      <div class="signup-grid">
+        <!-- Left: Puppy image -->
+        <div class="signup-hero">
+          <img
+            alt="Puppy with bow tie"
+            src="https://animistic.co/wp-content/uploads/2025/09/Starts-August-20TH-1.png"
+          />
+        </div>
+        <!-- Right: Form & messages -->
+        <div class="signup-panel">
+          <!-- Iframe oculto para el POST (no cambia de página ni cierra el popup) -->
+          <iframe
+            name="_zcSignup"
+            id="_zcSignup"
+            style="display: none"
+            onload="(function(){
+    if(!window._zc_submitted_flag) return;
+    window._zc_submitted_flag = 0;
+    var btn=document.getElementById('zcWebOptin');
+    var fields=document.querySelector('.signup-fields');
+    var ok=document.getElementById('localSuccess');
+    if(btn){ btn.disabled=false; btn.textContent='Join Now!'; }
+    if(fields){ fields.style.display='none'; }
+    if(ok){ ok.classList.add('show'); ok.style.display='block'; }
+
+    setTimeout(function(){
+      try{
+        if (window.PUM && typeof PUM.close === 'function') { PUM.close(); }
+        else {
+          var c=document.querySelector('.pum-container.pum-active .pum-close');
+          if (c) c.click();
+        }
+      }catch(e){}
+    }, 3000);
+  })();"
+          >
+          </iframe>
+
+          <!-- Mensaje local que enciende tu snippet cuando el iframe termina -->
+          <div id="localSuccess" aria-live="polite">
+            You're subscribed! Please check your inbox to confirm.
+          </div>
+
+          <form
+            id="zcampaignOptinForm"
+            action="https://ygdk-zgph.maillist-manage.net/weboptin.zc"
+            method="POST"
+            target="_zcSignup"
+            style="margin: 0; width: 100%"
+            onsubmit="window._zc_submitted_flag=1;"
+          >
+            <div
+              id="errorMsgDiv"
+              class="ZohoSection"
+              style="display: none !important"
+            >
+              Please correct the marked field(s) below.
+            </div>
+            <div class="signup-fields">
+              <div class="SIGNUP_FLD">
+                <input
+                  id="EMBED_FORM_EMAIL_LABEL"
+                  name="CONTACT_EMAIL"
+                  type="email"
+                  placeholder="Email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="SIGNUP_FLD">
+                <input
+                  id="FIRSTNAME"
+                  name="FIRSTNAME"
+                  type="text"
+                  placeholder="Name"
+                  autocomplete="given-name"
+                  required
+                />
+              </div>
+              <div class="SIGNUP_FLD">
+                <!-- submit real; mantiene el id y name para compatibilidad -->
+                <div class="button-wrap">
+                  <button
+                    id="zcWebOptin"
+                    name="SIGNUP_SUBMIT_BUTTON"
+                    type="submit"
+                    style="
+                      background: #e86da9 !important;
+                      font-size: 20px !important;
+                      width: 156px !important;
+                    "
+                  >
+                    Join Now!
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 🔁 Campos requeridos por Zoho (dentro de tu wrapper oculto) -->
+            <div class="ZohoSection">
+              <input type="hidden" id="fieldBorder" value="" />
+              <input
+                type="hidden"
+                id="submitType"
+                name="submitType"
+                value="optinCustomView"
+              />
+              <input
+                type="hidden"
+                id="emailReportId"
+                name="emailReportId"
+                value=""
+              />
+              <input
+                type="hidden"
+                id="formType"
+                name="formType"
+                value="QuickForm"
+              />
+              <input type="hidden" name="zx" id="cmpZuid" value="1330507d2" />
+              <input type="hidden" name="zcvers" value="3.0" />
+              <input
+                type="hidden"
+                name="oldListIds"
+                id="allCheckedListIds"
+                value=""
+              />
+              <input
+                type="hidden"
+                id="mode"
+                name="mode"
+                value="OptinCreateView"
+              />
+              <input
+                type="hidden"
+                id="zcld"
+                name="zcld"
+                value="1a9178396afeb981"
+              />
+              <input
+                type="hidden"
+                id="zctd"
+                name="zctd"
+                value="1a9178396aa5c029"
+              />
+              <input type="hidden" id="document_domain" value="" />
+              <input
+                type="hidden"
+                id="zc_Url"
+                value="ygdk-zgph.maillist-manage.net"
+              />
+              <input type="hidden" id="new_optin_response_in" value="0" />
+              <input type="hidden" id="duplicate_optin_response_in" value="0" />
+              <input
+                type="hidden"
+                name="zc_trackCode"
+                id="zc_trackCode"
+                value="ZCFORMVIEW"
+              />
+              <input
+                type="hidden"
+                id="zc_formIx"
+                name="zc_formIx"
+                value="3zc3d930573b6e327368ab0bc54f79128beea37ce11ca2301b4276df5ab6d88371"
+              />
+              <input type="hidden" id="viewFrom" value="URL_ACTION" />
+              <span style="display: none" id="dt_CONTACT_EMAIL"
+                >1,true,6,Contact Email,2</span
+              >
+              <span style="display: none" id="dt_FIRSTNAME"
+                >1,false,1,First Name,2</span
+              >
+              <span style="display: none" id="dt_LASTNAME"
+                >1,false,1,Last Name,2</span
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- /.signup-grid -->
+    </div>
+    <!-- /.quick_form_5_css -->
+  </div>
+</div>

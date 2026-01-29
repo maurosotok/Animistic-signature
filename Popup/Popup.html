@@ -30,7 +30,7 @@
   .ZohoSection {
     display: none !important;
   }
-  #sf3zc3d930573b6e327368ab0bc54f79128beea37ce11ca2301b4276df5ab6d88371 {
+  #sf3z03ca4028a59726f69ea9480d4deaccf09116e35d828606ace0601a3dc6fcbb62 {
     display: flex !important;
     justify-content: center !important;
     padding: 0 !important;
@@ -49,7 +49,7 @@
   #localSuccess.show {
     display: block;
   }
-  #sf3zc3d930573b6e327368ab0bc54f79128beea37ce11ca2301b4276df5ab6d88371
+  #sf3z03ca4028a59726f69ea9480d4deaccf09116e35d828606ace0601a3dc6fcbb62
     .quick_form_5_css {
     background: #ffffff !important;
     width: 90% !important;
@@ -181,7 +181,7 @@
 </style>
 <!-- ====== Markup (mismos IDs para tus logs/snippet) ====== -->
 <div
-  id="sf3zc3d930573b6e327368ab0bc54f79128beea37ce11ca2301b4276df5ab6d88371"
+  id="sf3z03ca4028a59726f69ea9480d4deaccf09116e35d828606ace0601a3dc6fcbb62"
   data-type="signupform"
 >
   <div id="customForm">
@@ -223,26 +223,39 @@
             name="_zcSignup"
             id="_zcSignup"
             style="display: none"
-            onload="(function(){
-    if(!window._zc_submitted_flag) return;
-    window._zc_submitted_flag = 0;
-    var btn=document.getElementById('zcWebOptin');
-    var fields=document.querySelector('.signup-fields');
-    var ok=document.getElementById('localSuccess');
-    if(btn){ btn.disabled=false; btn.textContent='Join Now!'; }
-    if(fields){ fields.style.display='none'; }
-    if(ok){ ok.classList.add('show'); ok.style.display='block'; }
+            onload="
+              (function () {
+                if (!window._zc_submitted_flag) return;
+                window._zc_submitted_flag = 0;
+                var btn = document.getElementById('zcWebOptin');
+                var fields = document.querySelector('.signup-fields');
+                var ok = document.getElementById('localSuccess');
+                if (btn) {
+                  btn.disabled = false;
+                  btn.textContent = 'Join Now!';
+                }
+                if (fields) {
+                  fields.style.display = 'none';
+                }
+                if (ok) {
+                  ok.classList.add('show');
+                  ok.style.display = 'block';
+                }
 
-    setTimeout(function(){
-      try{
-        if (window.PUM && typeof PUM.close === 'function') { PUM.close(); }
-        else {
-          var c=document.querySelector('.pum-container.pum-active .pum-close');
-          if (c) c.click();
-        }
-      }catch(e){}
-    }, 3000);
-  })();"
+                setTimeout(function () {
+                  try {
+                    if (window.PUM && typeof PUM.close === 'function') {
+                      PUM.close();
+                    } else {
+                      var c = document.querySelector(
+                        '.pum-container.pum-active .pum-close',
+                      );
+                      if (c) c.click();
+                    }
+                  } catch (e) {}
+                }, 3000);
+              })()
+            "
           >
           </iframe>
 
@@ -257,7 +270,7 @@
             method="POST"
             target="_zcSignup"
             style="margin: 0; width: 100%"
-            onsubmit="window._zc_submitted_flag=1;"
+            onsubmit="window._zc_submitted_flag = 1"
           >
             <div
               id="errorMsgDiv"
@@ -286,6 +299,16 @@
                   autocomplete="given-name"
                   required
                 />
+                <div class="SIGNUP_FLD">
+                  <input
+                    id="LASTNAME"
+                    name="LASTNAME"
+                    type="text"
+                    placeholder="Last Name"
+                    autocomplete="last-name"
+                    required
+                  />
+                </div>
               </div>
               <div class="SIGNUP_FLD">
                 <!-- submit real; mantiene el id y name para compatibilidad -->

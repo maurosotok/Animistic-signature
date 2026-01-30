@@ -328,18 +328,20 @@
                 </div>
               </div>
             </div>
+            <!-- 🔁 Campos requeridos por Zoho (dentro de tu wrapper oculto) -->
             <div class="ZohoSection">
-              <input type="hidden" id="fieldBorder" value="" />
+              <input type="hidden" id="fieldBorder" value="" onload="" />
               <input
                 type="hidden"
                 name="zc_trackCode"
                 id="zc_trackCode"
                 value="ZCFORMVIEW"
+                onload=""
               />
               <input
                 type="hidden"
-                id="viewFrom"
                 name="viewFrom"
+                id="viewFrom"
                 value="URL_ACTION"
               />
               <input
@@ -348,18 +350,12 @@
                 name="submitType"
                 value="optinCustomView"
               />
-
+              <input type="hidden" id="lD" name="lD" value="1a9178396b4a8a47" />
               <input
                 type="hidden"
-                id="emailReportId"
                 name="emailReportId"
+                id="emailReportId"
                 value=""
-              />
-              <input
-                type="hidden"
-                id="formType"
-                name="formType"
-                value="QuickForm"
               />
               <input type="hidden" name="zx" id="cmpZuid" value="1330507d2" />
               <input type="hidden" name="zcvers" value="3.0" />
@@ -395,13 +391,13 @@
               />
               <input type="hidden" id="new_optin_response_in" value="0" />
               <input type="hidden" id="duplicate_optin_response_in" value="0" />
-
               <input
                 type="hidden"
                 id="zc_formIx"
                 name="zc_formIx"
                 value="3z942aaac2c834495ed71e0e155b7d035fb29a2b7c1e6be2ff65090a2e94bc0d7d"
-              />
+              /><!-- End of the campaigns hidden tags -->
+              <!-- End of the campaigns hidden tags -->
 
               <span style="display: none" id="dt_CONTACT_EMAIL"
                 >1,true,6,Contact Email,2</span

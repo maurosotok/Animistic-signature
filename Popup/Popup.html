@@ -10,7 +10,10 @@
   .pum-theme-mauros-theme .pum-container {
     padding: 0px !important;
   }
-
+  button.pum-close.popmake-close{
+    line-height: 3px;
+    border-radius: 999px;
+  }
   @media only screen and (max-width: 600px) {
     .quick_form_5_css[name="SIGNUP_BODY"] {
       width: 80% !important;
@@ -30,7 +33,7 @@
   .ZohoSection {
     display: none !important;
   }
-  #sf3zc3d930573b6e327368ab0bc54f79128beea37ce11ca2301b4276df5ab6d88371 {
+  #sf3z942aaac2c834495ed71e0e155b7d035fb29a2b7c1e6be2ff65090a2e94bc0d7d {
     display: flex !important;
     justify-content: center !important;
     padding: 0 !important;
@@ -49,7 +52,7 @@
   #localSuccess.show {
     display: block;
   }
-  #sf3zc3d930573b6e327368ab0bc54f79128beea37ce11ca2301b4276df5ab6d88371
+  #sf3z942aaac2c834495ed71e0e155b7d035fb29a2b7c1e6be2ff65090a2e94bc0d7d
     .quick_form_5_css {
     background: #ffffff !important;
     width: 90% !important;
@@ -181,7 +184,7 @@
 </style>
 <!-- ====== Markup (mismos IDs para tus logs/snippet) ====== -->
 <div
-  id="sf3zc3d930573b6e327368ab0bc54f79128beea37ce11ca2301b4276df5ab6d88371"
+  id="sf3z942aaac2c834495ed71e0e155b7d035fb29a2b7c1e6be2ff65090a2e94bc0d7d"
   data-type="signupform"
 >
   <div id="customForm">
@@ -223,26 +226,39 @@
             name="_zcSignup"
             id="_zcSignup"
             style="display: none"
-            onload="(function(){
-    if(!window._zc_submitted_flag) return;
-    window._zc_submitted_flag = 0;
-    var btn=document.getElementById('zcWebOptin');
-    var fields=document.querySelector('.signup-fields');
-    var ok=document.getElementById('localSuccess');
-    if(btn){ btn.disabled=false; btn.textContent='Join Now!'; }
-    if(fields){ fields.style.display='none'; }
-    if(ok){ ok.classList.add('show'); ok.style.display='block'; }
+            onload="
+              (function () {
+                if (!window._zc_submitted_flag) return;
+                window._zc_submitted_flag = 0;
+                var btn = document.getElementById('zcWebOptin');
+                var fields = document.querySelector('.signup-fields');
+                var ok = document.getElementById('localSuccess');
+                if (btn) {
+                  btn.disabled = false;
+                  btn.textContent = 'Join Now!';
+                }
+                if (fields) {
+                  fields.style.display = 'none';
+                }
+                if (ok) {
+                  ok.classList.add('show');
+                  ok.style.display = 'block';
+                }
 
-    setTimeout(function(){
-      try{
-        if (window.PUM && typeof PUM.close === 'function') { PUM.close(); }
-        else {
-          var c=document.querySelector('.pum-container.pum-active .pum-close');
-          if (c) c.click();
-        }
-      }catch(e){}
-    }, 3000);
-  })();"
+                setTimeout(function () {
+                  try {
+                    if (window.PUM && typeof PUM.close === 'function') {
+                      PUM.close();
+                    } else {
+                      var c = document.querySelector(
+                        '.pum-container.pum-active .pum-close',
+                      );
+                      if (c) c.click();
+                    }
+                  } catch (e) {}
+                }, 3000);
+              })()
+            "
           >
           </iframe>
 
@@ -257,7 +273,7 @@
             method="POST"
             target="_zcSignup"
             style="margin: 0; width: 100%"
-            onsubmit="window._zc_submitted_flag=1;"
+            onsubmit="window._zc_submitted_flag = 1"
           >
             <div
               id="errorMsgDiv"
@@ -286,6 +302,16 @@
                   autocomplete="given-name"
                   required
                 />
+                <div class="SIGNUP_FLD">
+                  <input
+                    id="LASTNAME"
+                    name="LASTNAME"
+                    type="text"
+                    placeholder="Last Name"
+                    autocomplete="last-name"
+                    required
+                  />
+                </div>
               </div>
               <div class="SIGNUP_FLD">
                 <!-- submit real; mantiene el id y name para compatibilidad -->
@@ -305,15 +331,27 @@
                 </div>
               </div>
             </div>
-            <!-- 🔁 Campos requeridos por Zoho (dentro de tu wrapper oculto) -->
             <div class="ZohoSection">
               <input type="hidden" id="fieldBorder" value="" />
+              <input
+                type="hidden"
+                name="zc_trackCode"
+                id="zc_trackCode"
+                value="ZCFORMVIEW"
+              />
+              <input
+                type="hidden"
+                id="viewFrom"
+                name="viewFrom"
+                value="URL_ACTION"
+              />
               <input
                 type="hidden"
                 id="submitType"
                 name="submitType"
                 value="optinCustomView"
               />
+
               <input
                 type="hidden"
                 id="emailReportId"
@@ -344,7 +382,7 @@
                 type="hidden"
                 id="zcld"
                 name="zcld"
-                value="1a9178396afeb981"
+                value="1a9178396b4a8a47"
               />
               <input
                 type="hidden"
@@ -360,19 +398,14 @@
               />
               <input type="hidden" id="new_optin_response_in" value="0" />
               <input type="hidden" id="duplicate_optin_response_in" value="0" />
-              <input
-                type="hidden"
-                name="zc_trackCode"
-                id="zc_trackCode"
-                value="ZCFORMVIEW"
-              />
+
               <input
                 type="hidden"
                 id="zc_formIx"
                 name="zc_formIx"
-                value="3zc3d930573b6e327368ab0bc54f79128beea37ce11ca2301b4276df5ab6d88371"
+                value="3z942aaac2c834495ed71e0e155b7d035fb29a2b7c1e6be2ff65090a2e94bc0d7d"
               />
-              <input type="hidden" id="viewFrom" value="URL_ACTION" />
+
               <span style="display: none" id="dt_CONTACT_EMAIL"
                 >1,true,6,Contact Email,2</span
               >
